@@ -86,6 +86,7 @@ function renderFlags() {
   for (var i = 0; i < ui.flags.length; i++) {
     var code = random_flags[i].code.toLowerCase();
     ui.flags_img[i].src = 'flags/' + code + '.svg';
+    ui.flags[i].classList.remove('is-active');
   }
 }
 
